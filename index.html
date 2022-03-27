@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cuellar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+  <header>
+        
+    <div class="contenedor">
+           
+        <nav class="menu">
+            <a href="index.html">Ejercicio 1</a>
+            <a href="index2.html">Ejercicio 2</a>
+            <a href="index3.html">Ejercicio 3</a>
+            <a href="index4.html">Ejercicio 4</a>
+            <a href="index5.html">Ejercicio 5</a>
+        </nav>
+        <a class="navbar-brand" href="#">
+            <img src="img/foto.png" alt="" width="160" height="160">
+          </a>
+       
+<footer>
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Ejercicio 1</h2>
+               
+            </div>
+            <form action="" class="formulario" method="POST">
+                <div class="container">
+                    <p>Escribir un programa que permita cargar el nombre de un usuario y su mail por teclado. Mostrar posteriormente los datos en la página HTML.</p>
+                    <br>
+            
+                    <form>
+                        <label>Nombre:</label><br><br>
+                        <input type="text" id="nombre"><br><br>
+            
+                        <label>Correo:</label><br><br>
+                        <input type="email" id="email"><br><br>
+                        <input type="button" value=" Resultado" onclick="mostrarDatos()" class="boton">
+                    </form>
+                    <br>
+            
+                    <div id="resultado1"></div>
+            
+                    <script>
+                        function mostrarDatos(){
+                            let nombre = document.getElementById("nombre").value;
+                            let email = document.getElementById("email").value;
+                            document.getElementById("resultado1").innerHTML = "Nombre: " + nombre + "<br><br>Email: " + email;
+                        }
+                    </script>
+            
+                
+                
+             
+            </form>
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cuellar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+  <header>
+        
+    <div class="contenedor">
+           
+        <nav class="menu">
+            <a href="index.html">Ejercicio 1</a>
+            <a href="index2.html">Ejercicio 2</a>
+            <a href="index3.html">Ejercicio 3</a>
+            <a href="index4.html">Ejercicio 4</a>
+            <a href="index5.html">Ejercicio 5</a>
+        </nav>
+        <a class="navbar-brand" href="#">
+            <img src="img/foto.png" alt="" width="160" height="160">
+          </a>
+       
+<footer>
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Ejercicio 5</h2>
+            </div>
+            <form action="" class="formulario" method="POST">
+                <div class="container">
+
+                    <p>Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.</p>
+                    <br>
+            
+                    <form>
+                        <label>Número 1:</label>
+                        <input type="text" id="number1" class="numeros">
+                        <br><br>
+            
+                        <label>Número 2:</label>
+                        <input type="text" id="number2" class="numeros">
+                        <br><br>
+            
+                        <label>Número 3:</label>
+                        <input type="text" id="number3" class="numeros">
+                        <br><br>
+            
+                        <input type="button" value=" Resultado" onclick="ejercicio5()" class="boton">
+                    </form>
+            
+                    <br>
+            
+                    <div id="ej5"></div>
+            
+                    <script>
+                        function ejercicio5(){
+                            let n1 = parseInt(document.getElementById("number1").value);
+                            let n2 = parseInt(document.getElementById("number2").value);
+                            let n3 = parseInt(document.getElementById("number3").value);
+            
+                            let mayor = 0;
+            
+                            if(n1>n2){
+                                if(n1>n3){
+                                    mayor = n1;
+                                }
+                                else {
+                                    mayor = n3;
+                                }
+                            }
+                            else if(n2>n3){
+                                mayor = n2;
+                            } else {
+                                mayor = n3;
+                            }
+            
+                            document.getElementById("ej5").innerHTML = "El número mayor es: " + mayor;
+            
+                        }
+                    </script>
+                </div>
+            
+            
+            
+                
+                
+             
+            </form>
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
+</footer>
+
+</body>
+</html>

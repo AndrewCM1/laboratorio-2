@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cuellar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+  <header>
+        
+    <div class="contenedor">
+           
+        <nav class="menu">
+            <a href="index.html">Ejercicio 1</a>
+            <a href="index2.html">Ejercicio 2</a>
+            <a href="index3.html">Ejercicio 3</a>
+            <a href="index4.html">Ejercicio 4</a>
+            <a href="index5.html">Ejercicio 5</a>
+        </nav>
+        <a class="navbar-brand" href="#">
+            <img src="img/foto.png" alt="" width="160" height="160">
+          </a>
+       
+<footer>
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Ejercicio 4</h2>
+            </div>
+            <form action="" class="formulario" method="POST">
+                <div class="container">
+                    
+                    <p>Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'.</p>
+                    <br>
+            
+                    <form>
+                        <label>Nota 1:</label>
+                        <input type="text" id="nota1" class="numeros">
+                        <br><br>
+                        <label>Nota 2:</label>
+                        <input type="text" id="nota2" class="numeros">
+                        <br><br>
+                        <label>Nota 3:</label>
+                        <input type="text" id="nota3" class="numeros">
+                        <br><br>
+                        <input type="button" value=" Resultado" onclick="promedio()" class="boton">
+                    </form>
+            
+                    <div id="ej4"></div><br>
+                    
+                    <script>
+                        function promedio(){
+                            let nota1 = parseInt(document.getElementById("nota1").value);
+                            let nota2 = parseInt(document.getElementById("nota2").value);
+                            let nota3 = parseInt(document.getElementById("nota3").value);
+            
+                            let prom = (nota1 + nota2 + nota3) / 3 
+            
+                            if(prom>=4){
+                                document.getElementById("ej4").innerHTML = "Regular";
+                            } else {
+                                document.getElementById("ej4").innerHTML = "Reprobado";
+                            }
+                        }
+            
+                    </script>
+                </div>
+            
+            
+                
+                
+             
+            </form>
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
+</footer>
+
+</body>
+</html>

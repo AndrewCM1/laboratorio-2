@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cuellar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+  <header>
+        
+    <div class="contenedor">
+           
+        <nav class="menu">
+            <a href="index.html">Ejercicio 1</a>
+            <a href="index2.html">Ejercicio 2</a>
+            <a href="index3.html">Ejercicio 3</a>
+            <a href="index4.html">Ejercicio 4</a>
+            <a href="index5.html">Ejercicio 5</a>
+        </nav>
+        <a class="navbar-brand" href="#">
+            <img src="img/foto.png" alt="" width="160" height="160">
+          </a>
+       
+<footer>
+    <section class="contacto">
+        <div class="contenedor">
+            <div class="footer-textos">
+                <h2>Ejercicio 2</h2>
+              
+            </div>
+            <form action="" class="formulario" method="POST">
+            <div class="container">
+                <p>Escribir un programa en el cual se ingresen cuatro números, calcular y mostrar la suma de los dos primeros y el producto del tercero y el cuarto.</p>
+                <br>
+        
+                <form>
+                    <label>Número 1:</label>
+                    <input type="text" class="numeros" id="primero">
+                    <br><br>
+                    <label>Número 2:</label>
+                    <input type="text" class="numeros" id="segundo">
+                    <br><br>
+                    <label>Número 3:</label>
+                    <input type="text" class="numeros" id="tercero">
+                    <br><br>
+                    <label>Número 4:</label>
+                    <input type="text" class="numeros" id="cuarto">
+                    <br><br>
+        
+                    <input type="button" value="RESULTADO" onclick="calcularNumeros()" class="boton">
+                </form>
+        
+                <br>
+        
+                <div id="resultado2"></div>
+        
+                <script>
+                    function calcularNumeros(){
+                        let primero = parseInt(document.getElementById("primero").value);
+                        let segundo = parseInt(document.getElementById("segundo").value);
+        
+                        let suma = primero + segundo;
+        
+                        let tercero = document.getElementById("tercero").value;
+                        let cuarto = document.getElementById("cuarto").value;
+                        
+                        let producto = tercero * cuarto;
+        
+                        document.getElementById("resultado2").innerHTML = "Suma de los dos primeros: " + suma + "<br><br>Producto del tercero y cuarto: " + producto;
+                    }
+                </script>
+            </div>
+            
+                
+                
+             
+            </form>
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    
+</footer>
+
+</body>
+</html>
